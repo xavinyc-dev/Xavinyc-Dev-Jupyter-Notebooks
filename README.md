@@ -4,7 +4,7 @@ My study notes for learning software engineering, written as Jupyter notebooks. 
 
 ## Notebooks
 
-### GitBooks curriculum
+### Marcy Labs GitBooks curriculum
 
 Numbered to match the module and lesson (`0.1` is Mod 0, Lesson 1).
 
