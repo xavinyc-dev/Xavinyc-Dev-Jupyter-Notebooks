@@ -4,6 +4,15 @@ My study notes for learning software engineering, written as Jupyter notebooks. 
 
 This is a **public** repository. The notes were made for studying and educational purposes only, and they are not for sale or commercial use.
 
+## What is a Jupyter notebook?
+
+A Jupyter notebook is a file ending in `.ipynb` that mixes written notes with code you can run. It is made of blocks called **cells**:
+
+- **Markdown cells** hold text: headings, explanations, tables.
+- **Code cells** hold Python. When you run one, its output appears directly underneath.
+
+That makes notebooks a good fit for study notes, because every example can be run and changed to see what happens. If you have never used one, start with **View a notebook** under [Using these notes](#using-these-notes) below. It needs no setup.
+
 ## Sources
 
 The material in these notes comes from two places:
@@ -62,9 +71,104 @@ Every notebook follows the same pattern:
 
 ## Using these notes
 
-View any notebook directly on GitHub by clicking it. To run one, open the folder in VS Code with the Python and Jupyter extensions installed, open a notebook, and choose **Run All**.
+### View a notebook
 
-How I study from them:
+Click any notebook in the tables above. GitHub shows it in your browser with the explanations, code, and outputs. You do not need to install anything or have an account to read them.
+
+### Get your own copy to edit
+
+You cannot change the notebooks in this repository, but you can make your own copy and edit that as much as you like.
+
+**1. Fork the repository.** At the top right of this page, click **Fork**, then **Create fork**. This makes a copy under your own GitHub account. You need a free GitHub account for this step.
+
+**2. Clone your fork to your computer.** On your fork's page, click the green **Code** button and copy the URL. Then open a terminal (the **Terminal** app on a Mac, or your **WSL** terminal, such as Ubuntu, on Windows) and run:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/Xavinyc-Dev-Jupyter-Notebooks.git
+cd Xavinyc-Dev-Jupyter-Notebooks
+```
+
+Replace `YOUR-USERNAME` with your GitHub username. You need [Git](https://git-scm.com/downloads) installed.
+
+New to the terminal or to Git? The [0.1_command_line_interface_cli.ipynb](0.1_command_line_interface_cli.ipynb) and [0.2_git_and_github.ipynb](0.2_git_and_github.ipynb) notebooks in this repository cover the basics, and you can read them on GitHub before installing anything.
+
+**3. Set up your editor.** Install:
+
+- [Python 3](https://www.python.org/downloads/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- The **Python** and **Jupyter** extensions for VS Code (open the Extensions panel, search for each, and click Install)
+
+**4. Open and run a notebook.** In VS Code, choose **File > Open Folder** and pick the `Xavinyc-Dev-Jupyter-Notebooks` folder. Click a `.ipynb` file to open it. The first time, click **Select Kernel** at the top right and choose your Python 3. Then click **Run All** to run every code cell.
+
+The first time you run a cell, VS Code may ask to install a package called `ipykernel`. Click **Install**. It is the piece that lets VS Code run notebook code, and it only needs installing once.
+
+**5. Edit it.**
+
+- Double-click a Markdown cell to edit the notes, then press `Shift+Enter` to render it.
+- Click a code cell to change the code, then press `Shift+Enter` to run it.
+- Hover between two cells and click **+ Code** or **+ Markdown** to add a new one.
+
+The [markdown_cheat_sheet.ipynb](markdown_cheat_sheet.ipynb) notebook explains the formatting used in the notes.
+
+**6. Save your changes to your fork.**
+
+```bash
+git add -A
+git commit -m "Describe what you changed"
+git push
+```
+
+Your changes go to your own copy on GitHub. This repository is not affected.
+
+### Other ways to run Jupyter notebooks
+
+VS Code is what I use, but it is not the only option. Pick whichever suits you.
+
+**Jupyter in the browser, started from the terminal.** This is the classic way. With Python 3 installed, run:
+
+```bash
+python3 -m pip install notebook
+```
+
+Then, from inside the `Xavinyc-Dev-Jupyter-Notebooks` folder:
+
+```bash
+jupyter notebook
+```
+
+A page opens in your web browser listing the notebooks. Click one to open it. To stop Jupyter, go back to the terminal and press `Control + C`.
+
+**JupyterLab.** A newer version of the same thing, with tabs and a file browser:
+
+```bash
+python3 -m pip install jupyterlab
+jupyter lab
+```
+
+**Google Colab.** Nothing to install. Go to [colab.research.google.com](https://colab.research.google.com/), choose **File > Upload notebook**, and pick a `.ipynb` file. You need a Google account.
+
+| Option | Install needed | Good for |
+|---|---|---|
+| VS Code + Jupyter extension | Python, VS Code, two extensions | Editing notebooks next to your other code |
+| Jupyter Notebook | Python, then `pip install notebook` | A simple, classic notebook in the browser |
+| JupyterLab | Python, then `pip install jupyterlab` | Working with several notebooks at once |
+| Google Colab | Nothing | Trying a notebook quickly, or a computer you cannot install on |
+
+If `pip install` gives an "externally-managed-environment" error, create a virtual environment first and install inside it:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install notebook
+```
+
+On Windows with WSL, all of these commands are the same as on a Mac, including `python3` and `source .venv/bin/activate`. Only Windows without WSL is different: there the commands are `python` and `.venv\Scripts\activate`.
+
+### Just want one notebook?
+
+Open the notebook on GitHub and click the **Download raw file** button at the top right of the file. Open the downloaded `.ipynb` file with any of the options above.
+
+### How I study from them
 
 - **Before a session:** open the previous notebook, cover the outputs and comments, and predict what each code cell prints.
 - **Once a week:** skim the quick reference tables and redo anything I blanked on.
