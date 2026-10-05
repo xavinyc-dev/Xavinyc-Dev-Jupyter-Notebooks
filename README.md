@@ -31,6 +31,23 @@ All credit for the original lesson material goes to The Marcy Lab School and fre
 
 These notes might not be for everyone. They are written for the way I study, they follow the order of my course, and they are a work in progress, so they may contain mistakes. If you are learning the same material, use them as a companion to the original lessons and not as a replacement.
 
+## Terms to know from the start
+
+These terms apply to every lesson, so they are listed here instead of in a single notebook.
+
+### CRUD
+
+**CRUD** stands for the four basic things a program can do with stored data:
+
+| Letter | Action | What it means | Example |
+|---|---|---|---|
+| **C** | Create | Add new data | Sign up for a new account |
+| **R** | Read | Look at existing data | View your profile |
+| **U** | Update | Change existing data | Edit your username |
+| **D** | Delete | Remove data | Delete your account |
+
+Most apps are built around these four actions, so the term comes up often in software engineering.
+
 ## Notebooks
 
 ### The Marcy Lab School GitBook
