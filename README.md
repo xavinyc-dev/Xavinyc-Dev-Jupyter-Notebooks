@@ -61,6 +61,10 @@ Numbered to match the module and lesson (`0.1` is Mod 0, Lesson 1).
 | [0.4_git_branching.ipynb](0.4_git_branching.ipynb) | Feature branches, switching and merging, pull requests, deleting branches |
 | [1.1_intro_to_programming.ipynb](1.1_intro_to_programming.ipynb) | Programs, comments, expressions vs statements, `print()`, f-strings, control flow, code style |
 | [1.2_data_types_variables_and_operators.ipynb](1.2_data_types_variables_and_operators.ipynb) | Data types, operators and order of precedence, variables and naming, arithmetic, comparison, logical, membership, identity, and assignment operators, the conditional expression |
+| [1.3_functions.ipynb](1.3_functions.ipynb) | `print()`, DRY, defining and invoking functions, docstrings, parameters and arguments, `return` vs `print()`, default values and keyword arguments, `*args` and `**kwargs`, local scope and `global`, the `player_damage` example |
+| [1.4_conditional_statements.ipynb](1.4_conditional_statements.ipynb) | `if` / `elif` / `else`, why order matters, narrow vs broad conditions, only-`if` chains, guard clauses, truthy and falsy values, conditional expressions |
+| [1.5_strings_inputs_and_outputs.ipynb](1.5_strings_inputs_and_outputs.ipynb) | Strings and escape characters, `input()`, cleaning, validating, and parsing input, type casting, indexing and slicing, `find()` and `split()`, printing with `sep` and `end`, f-strings and number formatting, the Madlib challenge |
+| [1.6_loops.ipynb](1.6_loops.ipynb) | Iteration, `for` loops over strings, `range()`, and lists, `sum()`, `.append()` and the build-a-list pattern, converting with `int()`, list comprehensions, `while` loops, validating input in a loop, `break` and `continue`, the coin-flip and guessing-game challenges |
 
 ### freeCodeCamp
 
@@ -70,6 +74,16 @@ Prefixed with `fc_`.
 |---|---|
 | [fc_understanding_variables_and_data_types.ipynb](fc_understanding_variables_and_data_types.ipynb) | Variables, naming rules, comments, integers, floats, strings, booleans, `type()` and `isinstance()` |
 | [fc_introduction_to_strings.ipynb](fc_introduction_to_strings.ipynb) | Quotes and escaping, the `in` operator, indexing, immutability, concatenation and `+=`, f-strings, slicing, and 14 string methods |
+| [fc_build_an_employee_profile_validator.ipynb](fc_build_an_employee_profile_validator.ipynb) | Workshop: validating and cleaning employee data with `.find()`, slicing, `in`, `.strip()`, `.title()`, `.lower()`, `.upper()`, `.replace()`, `.split()`, `.join()`, `.startswith()`, `.endswith()`, `.count()` |
+
+### Practice programs
+
+Challenge solutions written as regular Python files. Run them from the terminal with `python3`, for example `python3 guessing_game.py`.
+
+| File | From | What it does |
+|---|---|---|
+| [madlib-challenge/main.py](madlib-challenge/main.py) | 1.5 Strings, Inputs and Outputs | A madlib story built from the user's answers, with the name, "a"/"an", and plurals fixed up using string methods |
+| [guessing_game.py](guessing_game.py) | 1.6 Loops | Guess a secret number from 1 to 10 in 5 tries, with input validation and `exit` to quit |
 
 ### Reference
 
@@ -195,4 +209,4 @@ Open the notebook on GitHub and click the **Download raw file** button at the to
 
 - These notes are for studying and educational purposes only.
 - Lesson material belongs to The Marcy Lab School and freeCodeCamp, as credited under Sources. Some of it appears here word for word.
-- Some notebooks were reviewed with help from an AI assistant.
+- Some notebooks were written or reviewed with help from an AI assistant.
